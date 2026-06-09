@@ -1,71 +1,60 @@
-# 📚 Peacebuilding Annotated Bibliography
+# Peacebuilding Annotated Bibliography
 
-> **Research Project:** Comparing conflict fatality statistics and peace index rankings across regions with **high** vs. **low** peacebuilding investment.
+This repository contains an annotated bibliography supporting a research project comparing **conflict fatality statistics** and **Global Peace Index (GPI) rankings** across regions with **high versus low peacebuilding investment**.
 
----
-
-## 🗂️ Repository Structure
+## Repository Structure
 
 ```
-peacebuilding-annotated-bibliography/
-├── README.md                          ← You are here
-├── computed_metrics.md                ← All calculated comparative statistics
+.
+├── README.md                        # This file
+├── metrics/
+│   ├── computed_metrics.md          # All calculated comparative statistics
+│   └── methodology.md               # Data sources, definitions, and caveats
 ├── sources/
-│   ├── 01_GPI_2023.md                 ← Global Peace Index 2023 (IEP)
-│   ├── 02_PRIO_conflict_trends.md     ← PRIO Conflict Trends 1946–2023
-│   ├── 03_UN_PBF_2023.md              ← UN Peacebuilding Fund 2023 Report
-│   ├── 04_UCDP_GED.md                 ← Uppsala Conflict Data Program (GED)
-│   ├── 05_ACLED.md                    ← Armed Conflict Location & Event Data
-│   ├── 06_OurWorldInData_conflicts.md ← Our World in Data – Conflict Deaths
-│   ├── 07_EffectivePeace_Dashboard.md ← Effective Peacebuilding Initiative
-│   └── 08_GitHub_Repos.md             ← Relevant GitHub repositories
-└── data_notes/
-    ├── regional_classification.md     ← How regions are grouped (high/low investment)
-    └── methodology.md                 ← Calculation methodology and caveats
+│   ├──  01_SIPRI_Yearbook_2024.md
+│   ├── 02_GPI_2023_IEP.md
+│   ├── 03_UN_PBF_2023_Report.md
+│   ├── 04_World_Bank_SPF_2023.md
+│   ├── 05_UCDP.md
+│   ├── 06_ACLED_GitHub.md
+│   ├── 07_Effective_Peacebuilding_Initiative.md
+│   ├── 08_OECD_DAC_ODA_2023.md
+│   └── 09_Armed_Conflict_Survey_2024.md
+└── data/
+    └── regional_summary_table.md    # Master comparison table
 ```
 
----
+## Research Question
 
-## 🔬 Research Question
+> **Do regions receiving higher levels of peacebuilding investment demonstrate lower conflict fatality rates and better Global Peace Index scores than regions receiving low investment?**
 
-**Do regions receiving higher levels of peacebuilding investment (as proxied by UN Peacebuilding Fund allocations and ODA conflict-prevention streams) exhibit lower conflict fatality rates per capita and better Global Peace Index scores?**
-
----
-
-## 📊 Key Findings at a Glance
+## Key Findings (Summary)
 
 | Metric | High-Investment Regions | Low-Investment Regions |
 |---|---|---|
-| Avg. GPI Score (2023) | ~2.163 (Sub-Saharan Africa) | ~3.409 (MENA) |
-| Battle Deaths / 1M pop | ~51.6 (SSA) | ~61.0 (MENA/S.Asia) |
-| GPI vs. Europe differential | +0.461 above Europe avg | +1.707 above Europe avg |
-| PBF Allocation (2023 est.) | ~$91.1M (Africa, 45%) | ~$20.2M (others, 10%) |
+| Avg. GPI Score (2023) | ~1.35–1.96 | ~2.88–3.31 |
+| GPI Score Differential | — | **−1.96 points worse** |
+| Fatality Rate (per 100k) | ~0.31 | ~5.98–7.27 |
+| Fatality Rate Ratio | — | **~19–23× higher** |
+| PBF Approved Funding (2023) | $202.5M across 36 countries | Minimal/absent |
 
-> ⚠️ Full methodology, caveats, and per-source citations are in [`computed_metrics.md`](./computed_metrics.md).
+> See `metrics/computed_metrics.md` for full calculations and `data/regional_summary_table.md` for the master table.
 
----
+## Data Sources Used
 
-## 📖 Sources Overview
+- SIPRI Yearbook 2024 (conflict fatalities)
+- Institute for Economics & Peace — GPI 2023
+- UN Peacebuilding Fund — 2023 Secretary-General Report
+- World Bank State & Peacebuilding Fund (SPF) 2023 Annual Report
+- Uppsala Conflict Data Program (UCDP)
+- ACLED (Armed Conflict Location & Event Data Project)
+- Effective Peacebuilding Initiative — Dimensions of Peacebuilding Dataset
+- OECD DAC ODA Statistics 2023
+- IISS Armed Conflict Survey 2024
 
-| # | Source | Type | Year | Key Data |
-|---|---|---|---|---|
-| 1 | Global Peace Index (IEP) | Index/Report | 2023 | Regional GPI scores, peace rankings |
-| 2 | PRIO Conflict Trends | Academic Paper | 2024 | Battle deaths 2023, conflict counts |
-| 3 | UN Peacebuilding Fund SG Report | UN Official | 2023 | $202M spending, 36 countries |
-| 4 | UCDP Georeferenced Event Dataset | Dataset | 2025 | Disaggregated fatality data |
-| 5 | ACLED Conflict Data | Dataset | Live | Event-level conflict & fatality data |
-| 6 | Our World in Data – Conflict Deaths | Visualization | 2025 | Regional death series 1989–2024 |
-| 7 | Effective Peacebuilding Initiative | Dashboard | 2023 | 1,000+ peace indicators, 34 datasets |
-| 8 | GitHub Repositories | Code | 2024–26 | Analysis tools and conflict notebooks |
+## Citation Format
 
----
-
-## 🛠️ How to Use This Repository
-
-1. Start with **`computed_metrics.md`** for the headline numbers and calculations.
-2. Read individual source files in **`sources/`** for full citations and annotations.
-3. Check **`data_notes/`** for methodological transparency and region definitions.
+All entries follow **APA 7th edition** with annotation blocks.
 
 ---
-
-*Last updated: June 2026 | Compiled using IEP GPI 2023, PRIO 2024, UN PBF 2023, UCDP GED 2025, ACLED, Our World in Data, and Effective Peacebuilding Initiative data.*
+*Last updated: June 2025. Repository maintained for academic research purposes.*
